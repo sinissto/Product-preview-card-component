@@ -21,7 +21,7 @@ html {
   background-color: hsl(0, 0%, 100%);
   font-size: 1.4rem;
   width: 47rem;
-  height: 35rem;
+  height: 40rem;
   /*padding: 1.5rem;*/
   transform: translate(-50%, -50%);
   border-radius: 1rem;
@@ -31,13 +31,14 @@ html {
   overflow: hidden;
 
   display: flex;
+
   justify-content: space-between;
   gap: 0;
 }
 
 .product-image {
   /*flex: 0 1 auto;*/
-  width: 50%;
+  width: 65%;
   background-image: url("/images/image-product-desktop.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -45,5 +46,71 @@ html {
 }
 
 .product-description {
-  width: 50%;
+  width: 58%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: space-between;
+  align-content: center;
+  padding: 2rem;
+}
+
+.product-description > span {
+  text-transform: uppercase;
+  color: #a4a4a4;
+  letter-spacing: 4px;
+  font-size: 1.1rem;
+  font-family: Montserrat;
+}
+
+.product-description > h2 {
+  font-family: Fraunces;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.product-description > p {
+  color: #a4a4a4;
+  font-size: 1.2rem;
+  letter-spacing: 0.2px;
+  line-height: 1.6;
+  font-family: Montserrat;
+}
+
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.product-price-discount {
+  font-family: Fraunces;
+  color: hsl(158, 36%, 37%);
+  font-size: 2.5rem;
+}
+
+.product-price-regular {
+  display: inline-block;
+  font-family: Montserrat;
+  font-size: 1rem;
+  padding-right: 4rem;
+  padding-top: 0.8rem;
+  text-decoration: line-through;
+  color: #a4a4a4;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+
+  font-size: 1.2rem;
+  font-family: Montserrat;
+  font-weight: 500;
+
+  color: hsl(0, 0%, 100%);
+
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 1rem;
 }
