@@ -60,11 +60,11 @@ html {
   color: #a4a4a4;
   letter-spacing: 4px;
   font-size: 1.1rem;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
 }
 
 .product-description > h2 {
-  font-family: Fraunces;
+  font-family: Fraunces, sans-serif;
   font-weight: 700;
   font-size: 2.5rem;
 }
@@ -74,7 +74,7 @@ html {
   font-size: 1.2rem;
   letter-spacing: 0.2px;
   line-height: 1.6;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
 }
 
 .product-price {
@@ -84,14 +84,14 @@ html {
 }
 
 .product-price-discount {
-  font-family: Fraunces;
+  font-family: Fraunces, sans-serif;
   color: hsl(158, 36%, 37%);
   font-size: 2.5rem;
 }
 
 .product-price-regular {
   display: inline-block;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 1rem;
   padding-right: 4rem;
   padding-top: 0.8rem;
@@ -106,11 +106,32 @@ html {
   padding: 1rem;
 
   font-size: 1.2rem;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-weight: 500;
 
   color: hsl(0, 0%, 100%);
 
   background-color: hsl(158, 36%, 37%);
   border-radius: 1rem;
+}
+
+@media (max-width: 375px) {
+  .card {
+    width: 90%;
+    height: 60rem;
+
+    flex-direction: column;
+  }
+
+  .product-image {
+    width: 100%;
+    height: 50rem;
+  }
+  .product-description {
+    width: 90%;
+  }
+
+  .product-price-regular {
+    padding-right: 12rem;
+  }
 }
